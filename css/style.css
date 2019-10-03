@@ -1,0 +1,16 @@
+.navbar-brand img {
+    width: 150px;
+}
+
+.btn.btn-primary {
+    background-color: #E64A19;
+    border-color: #E64A19;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+}
