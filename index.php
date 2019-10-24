@@ -44,7 +44,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 p-5">
-                <img src="imagens/undraw_team_spirit_hrr4.svg" class="img-fluid" alt="">
+                <img src="./img/undraw_selecting_1lx3.svg" class="img-fluid" alt="">
             </div>
             <div class="col-md-6 p-5">
                 <h2 class="mt-5">Sobre</h2>
