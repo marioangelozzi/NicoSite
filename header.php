@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>Agência NicoSite</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -30,6 +30,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
+                    <?php 
+                        if(isset($_SESSION['logado'])) {
+                            echo "<li><a class='nav-link'>Bem vindo, usuário</li>";
+                            echo "<li><a class='nav-link' href='login.php?logout=true'>sair</a></li>";
+                        } else {
+                            echo "<li><a class='nav-link' href='login.php?'>login</a></li>";
+                        }
+                    ?>
                 </ul>
             </div>
         </nav>

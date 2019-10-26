@@ -62,3 +62,22 @@ footer {
     padding-top: 10px;
 
 }
+
+.ilustra-servico {
+    max-width: 100%;
+    width: 350px;
+    margin: 0 auto;
+}
+
+
+table img {
+    width: 100px;
+}
+
+table tr td:last-child {
+    width: 200px;
+}
+
+main {
+    margin-top: 100px;
+}
