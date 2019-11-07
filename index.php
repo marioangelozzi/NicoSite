@@ -36,7 +36,17 @@
             </div>
         </div>
         <div class="row">
-            <?php listarServicos(); ?>
+
+            <!-- <div class="col">
+                <div class="card"">
+                    <img src="./img/NicoSite-logo-black.png" class="card-img-top" alt="logo">
+                    <div class="card-body">
+                        <p class="card-text text-center">Consultoria Marketing Digital</p>
+                    </div>
+                </div>
+            </div> -->
+        
+            <?php listarServicosIndex(); ?>
         </div>
     </div>
 </section>
