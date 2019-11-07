@@ -62,11 +62,13 @@ function getDescricao($id)
     global $servicos;
     return $servicos[$id]["descricao"];
 }
+
 function getImagem($id)
 {
     global $servicos;
     return $servicos[$id]["imagem"];
 }
+
 if (isset($_POST['cadastrar_servico'])) {
     $arquivoServicos = 'servicos.json';
     $imagemServico = '';
@@ -100,6 +102,7 @@ if (isset($_POST['cadastrar_servico'])) {
         file_put_contents($arquivoServicos, $jsonServicos); // adiciona info no arquivo
     }
 }
+
 function listarServicos()
 {
     // trazer serviços do json
@@ -112,6 +115,7 @@ function listarServicos()
     }
     return $servicos;
 }
+
 if (isset($_POST['login'])) {
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $senha = isset($_POST['senha']) ? $_POST['senha'] : '';
@@ -128,10 +132,12 @@ if (isset($_POST['login'])) {
         header('Location: index.php');
     }
 }
+
 if (isset($_GET['logout'])) {
     // deslogar
     session_destroy();
 }
+
 //para exibir informações no excluir_servico.php
 if (isset($_GET['excluir_id'])) {
     $id_servico = $_GET['excluir_id']; // id recebido na URL
@@ -143,6 +149,7 @@ if (isset($_GET['excluir_id'])) {
         $servico = $arrayServicos['servicos'][$id_servico]; // retorna um serviço especifico pelo ID
     }
 }
+
 //para exibir informações no editar_servico.php
 if (isset($_GET['editar_id'])) {
     $id_servico = $_GET['editar_id']; // id recebido na URL
@@ -155,6 +162,7 @@ if (isset($_GET['editar_id'])) {
     }
     // var_dump($servico);
 }
+
 // envio do form de editar
 if (isset($_POST['editar_servico'])) {
     $arquivoServicos = 'servicos.json';
@@ -189,6 +197,7 @@ if (isset($_POST['editar_servico'])) {
         echo "Arquivo não encontrado!";
     }
 }
+
 if (isset($_POST['excluir_servico'])) {
     $arquivoServicos = "servicos.json";
     $jsonServicos = file_get_contents($arquivoServicos);

@@ -22,7 +22,7 @@
                         <input type="file" class="form-control" name="imagem" id="imagem">
                     </div>
                     <div class="form-group text-right">
-                        <button class="btn btn-primary" name="cadastrar-servico">Enviar</button>
+                        <button class="btn btn-primary" name="cadastrar_servico">Enviar</button>
                     </div>
                 </form>
             </div>
